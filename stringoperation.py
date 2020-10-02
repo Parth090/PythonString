@@ -1,46 +1,46 @@
-# char = "my name is aditya and i am working as a software developer"
-# print(char.title())
-# print(len(char))
-# print(char[0:5])
-# print(char.find('zo'))
-# print(char.replace('name','hello'))
-# print(char)
-# print(char.split())
+char = "my name is aditya and i am working as a software developer"
+print(char.title())
+print(len(char))
+print(char[0:5])
+print(char.find("zo"))
+print(char.replace("name", "hello"))
+print(char)
+print(char.split())
 
 
-# num = 0
-# count = 0
-# for i in range(num,20):
-#     if i % 2 == 0:
-#         continue
-#     count = count + 1
-# print('Count of odd number is ' + str(count))
-# print(f'count of odd number is {count}')
-# print('Count of odd number is %d'%(count))
+num = 0
+count = 0
+for i in range(num, 20):
+    if i % 2 == 0:
+        continue
+    count = count + 1
+print("Count of odd number is " + str(count))
+print(f"count of odd number is {count}")
+print("Count of odd number is %d" % (count))
 
-# time = input("Enter time in HH:MM:SSFM :")
-# if len(time) is 10:
-#     hh = int(time[0:2])
-#     mm = int(time[3:5])
-#     ss = int(time[6:8])
-#     ff = time[8:10]
-#     ff = ff.upper()
-#     if time[8:10].upper() == ff:
-#         hh = hh + 12
-#         print(f'{hh}:{mm}:{ss}PM')
-#     else:
-#         hh = hh
-#         print(f'{hh}:{mm}:{ss}AM')
-# else:
-#     print("Invalid format enter")
+time = input("Enter time in HH:MM:SSFM :")
+if len(time) is 10:
+    hh = int(time[0:2])
+    mm = int(time[3:5])
+    ss = int(time[6:8])
+    ff = time[8:10]
+    ff = ff.upper()
+    if time[8:10].upper() == ff:
+        hh = hh + 12
+        print(f"{hh}:{mm}:{ss}PM")
+    else:
+        hh = hh
+        print(f"{hh}:{mm}:{ss}AM")
+else:
+    print("Invalid format enter")
 
 # for i in range(1,6):
 #     print(str(i) * i)
 
-#a
-#bb
-#ccc
-#dddd
+# a
+# bb
+# ccc
+# dddd
 
 # alphabets = 'abcd'
 # for i in range(0,4):
@@ -94,7 +94,6 @@
 # print(op_2)
 
 
-
 # l1 = [100 , 300 , "python" , "hyd" , 39]
 
 # l2 = []
@@ -114,7 +113,7 @@
 #     sum.append(l1[i] + l2[i])
 # print(sum)
 
-#square of even numbers
+# square of even numbers
 
 # sqr_even = []
 # num = int(input('Enter number :'))
@@ -143,7 +142,7 @@
 # d = {}
 # for i in range(1,11):
 #     d[i] = i**2
-# print(d)        
+# print(d)
 
 # d = ['hee']
 # d1 = ['one','two','three']
@@ -166,7 +165,7 @@
 #         d[i] = [ j  for j in range(1,i+1)  if i % j == 0]
 # print(d)
 
-#d= {'i' : 3 , 'love': 4, 'python': 6}
+# d= {'i' : 3 , 'love': 4, 'python': 6}
 
 # d = {}
 # stmt = 'i love python'
@@ -207,7 +206,7 @@
 # mulres = mul(divres,num_2)
 
 
-#mul(div(sub(add(num_1,num_2),num_2),num_2),num_2)
+# mul(div(sub(add(num_1,num_2),num_2),num_2),num_2)
 
 
 # def avg(*abc):
@@ -216,7 +215,6 @@
 #         s = s + i
 #     s = s/len(abc)
 #     return s
-
 
 
 # s = avg(10,30)
@@ -254,7 +252,7 @@
 #     x = [1,2,3]
 #     return x
 #     # x[0] = 70
-    
+
 # lst = [12,13,14,15,16,17]
 # myFunc(lst)
 # print(lst)
@@ -263,7 +261,7 @@
 #     print(type(args))
 #     for arg in args:
 #         print(arg)
-        
+
 
 # myFunc('hello', 'how', 'are','you')
 
@@ -301,7 +299,7 @@
 #         if value == search:
 #             print('Index of searched value is %d'%(i) )
 #             return i
-            
+
 #     else:
 #         return -1
 
@@ -319,14 +317,14 @@
 
 # print(strn1)
 
-#Working with OS module
+# Working with OS module
 
 # import os
 
 # print(os.getcwd())
 
 # os.chdir(r'C:\Users\Lenovo\Desktop')
-# print(os.listdir()) 
+# print(os.listdir())
 
 
 # words = ['cat','monkey','dog']
@@ -339,7 +337,7 @@
 # for i in range(2,2):
 #     print(i)
 
-#0, 1, 1, 2,3,5,8,12
+# 0, 1, 1, 2,3,5,8,12
 # ͞pythonbestforbeginners͟
 
 # words = 'pythonbestforbeginners'
@@ -355,36 +353,37 @@
 # print(words.isalnum())
 
 
-#Python oops
+# Python oops
 ###################
 
+
 class Employee:
-    
+
     raiseamount = 1.04
     no_of_employee = 0
 
-    def __init__(self,first,last,pay):
+    def __init__(self, first, last, pay):
         self.first = first
         self.last = last
         self.pay = pay
-        self.email = self.first + '.' + self.last + '@company.com'
+        self.email = self.first + "." + self.last + "@company.com"
         Employee.no_of_employee += 1
 
     def fullname(self):
-        return '{} {}'.format(self.first,self.last)
-    
+        return "{} {}".format(self.first, self.last)
+
     def raise_amount(self):
         self.pay = int(self.pay * self.raiseamount)
-    
+
     @classmethod
-    def set_raise_amount(cls,amount):
+    def set_raise_amount(cls, amount):
         cls.raiseamount = amount
 
     @classmethod
-    def form_string(cls,emp_str):
-        first, last, pay =  emp_str.split('-')
-        return cls(first,last,pay)
-    
+    def form_string(cls, emp_str):
+        first, last, pay = emp_str.split("-")
+        return cls(first, last, pay)
+
     @staticmethod
     def is_workday(day):
         if day.weekday() == 5 or day.weekday() == 6:
@@ -397,51 +396,48 @@ class Employee:
 class Developer(Employee):
     raiseamount = 2.04
 
-    def __init__(self,first,last,pay,prog_lang):
-        super().__init__(first,last,pay)
+    def __init__(self, first, last, pay, prog_lang):
+        super().__init__(first, last, pay)
         self.prog_lang = prog_lang
 
-class Manager(Employee):
 
-    
-    def __init__(self,first,last,pay,employees = None):
-        super().__init__(first,last,pay)
+class Manager(Employee):
+    def __init__(self, first, last, pay, employees=None):
+        super().__init__(first, last, pay)
         if employees is None:
             self.employees = []
         else:
             self.employees = employees
             print(self.employees)
-    
-    def add_emp(self,emp):
+
+    def add_emp(self, emp):
         if emp not in self.employees:
             self.employees.append(emp)
-    
-    def remove_emp(self,emp):
+
+    def remove_emp(self, emp):
         if emp in self.employees:
             self.employees.remove(emp)
-    
+
     def print_emp(self):
         for emp in self.employees:
-           print("--->",emp.fullname())
+            print("--->", emp.fullname())
 
 
-
-
-dev1 = Developer('akash','singh',50000,'python')
+dev1 = Developer("akash", "singh", 50000, "python")
 print(dev1.email)
 print(dev1.pay)
 dev1.raise_amount()
 print(dev1.pay)
 print(dev1.prog_lang)
 
-mg1 = Manager('venkat','krishna',90000,[dev1])
+mg1 = Manager("venkat", "krishna", 90000, [dev1])
 print(mg1.email)
 mg1.add_emp(dev1)
 mg1.print_emp()
 
 print(Employee.no_of_employee)
-emp1 = Employee('aditya','mukherjee',70000)
-emp2 = Employee('navneet','nayak',40000)
+emp1 = Employee("aditya", "mukherjee", 70000)
+emp2 = Employee("navneet", "nayak", 40000)
 print(Employee.no_of_employee)
 print(emp1.email)
 print(emp1.fullname())
@@ -457,7 +453,7 @@ print(emp1.raiseamount)
 print(emp2.raiseamount)
 print(emp1.__dict__)
 
-emp_str_1 = 'shibin-munappaly-30000'
+emp_str_1 = "shibin-munappaly-30000"
 
 # first , last, pay = emp_str_1.split('-')
 # new_emp1 = Employee(first,last,pay)
@@ -465,27 +461,7 @@ new_emp1 = Employee.form_string(emp_str_1)
 print(new_emp1.fullname())
 
 import datetime
-my_date = datetime.date(2019,12,14)
+
+my_date = datetime.date(2019, 12, 14)
 
 print(Employee.is_workday(my_date))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
